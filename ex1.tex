@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[2TA]{fontenc}
+\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
 \usepackage{amsmath}
@@ -9,39 +9,37 @@
 \date{October 2020}
 
 \begin{document}
-
-\maketitle
-\begin{center}
-    \section*{Разложение функции в ряд Тейлора}
-\end{center}
-Разложим функцию
-$f(x) = \dfrac {\cos(x)}{\sin(x) + \cos(x)}$
-в ряд Тейлора.
-Общая формула Тейлора имеет следующий вид:
-\newline
-\begin{center}$f(x) =  f(a) + \dfrac{f'(a)}{1!}(x-a)^1 + \dfrac{f''(a)}{2!}(x-a)^2 + \dfrac{f'''(a)}{3!}(x-a)^3 + \dots + \dfrac{f^{(n)}(a)}{n!}(x-a)^n$
-\end{center}
-\newline
-Найдем значения функции и ее производных при $x=0$.
-\begin{itemize}
-    \item $f(x) = \dfrac {\cos(x)}{\sin(x) + \cos(x)}$, \newline $f(0)=1$
-    \item $f'(x) = \dfrac{(\sin(x) - \cos(x))  \cos(x)} {(\sin(x)+\cos(x))^2} - \dfrac{\sin(x)}{\sin(x)+\cos(x)}$, \newline $f'(0)=-1$
-    \item $f''(x) = -\dfrac{2(\sin(x)-\cos(x)) \sin(x)}{(\sin(x)+\cos(x))^2} + 
-    \dfrac{(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^3}$, \newline
-    $f''(0)=2$
-    \item $f'''(x)=\dfrac{2(\sin(x)-\cos(x))\cos(x)}{(\sin(x)+\cos(x))^2} - \dfrac{3(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))\sin(x)}{(\sin(x)+\cos(x))^3} + \newline +
-    \dfrac{(\sin(x)-\cos(x))(2\sin(x)+2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^3} + \newline +
-    \dfrac{(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))(3\sin(x)-3\cos(x))\cos(x)}{(\sin(x)+\cos(x))^4}
-    -2\dfrac{\sin(x)}{\sin(x)+\cos(x)} + 
-    \dfrac{(2\sin(x)-2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^2}$, \newline
-    $f'''(x)=-8$
-\end{itemize}
-Подставляя полученные значения производных в ряд Тейлора, получим:
-\begin{center}
-    $\dfrac{\cos(x)}{\sin(x)+\cos(x)}=1 + \dfrac{-1}{1!}x+\frac{2}{2!}x^2+\dfrac{-8}{3!}x^3+\dots$
-\end{center}
- 
-
-
+    
+    \maketitle
+    \begin{center}
+        \section*{Разложение функции в ряд Тейлора}
+    \end{center}
+    Разложим функцию
+    $f(x) = \dfrac {\cos(x)}{\sin(x) + \cos(x)}$
+    в ряд Тейлора.
+    Общая формула Тейлора имеет следующий вид:
+    \newline
+    \begin{center}$f(x) =  f(a) + \dfrac{f'(a)}{1!}(x-a)^1 + \dfrac{f''(a)}{2!}(x-a)^2 + \dfrac{f'''(a)}{3!}(x-a)^3 + \dots + \dfrac{f^{(n)}(a)}{n!}(x-a)^n$
+    \end{center}
+    Найдем значения функции и ее производных при $x=0$.
+    \begin{itemize}
+        \item $f(x) = \dfrac {\cos(x)}{\sin(x) + \cos(x)}$, \newline $f(0)=1$
+        \item $f'(x) = \dfrac{(\sin(x) - \cos(x))  \cos(x)} {(\sin(x)+\cos(x))^2} - \dfrac{\sin(x)}{\sin(x)+\cos(x)}$, \newline $f'(0)=-1$
+        \item $f''(x) = -\dfrac{2(\sin(x)-\cos(x)) \sin(x)}{(\sin(x)+\cos(x))^2} + 
+        \dfrac{(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^3}$, \newline
+        $f''(0)=2$
+        \item $f'''(x)=\dfrac{2(\sin(x)-\cos(x))\cos(x)}{(\sin(x)+\cos(x))^2} - \dfrac{3(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))\sin(x)}{(\sin(x)+\cos(x))^3} + \newline +
+        \dfrac{(\sin(x)-\cos(x))(2\sin(x)+2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^3} + \newline +
+        \dfrac{(\sin(x)-\cos(x))(2\sin(x)-2\cos(x))(3\sin(x)-3\cos(x))\cos(x)}{(\sin(x)+\cos(x))^4}
+        -2\dfrac{\sin(x)}{\sin(x)+\cos(x)} + 
+        \dfrac{(2\sin(x)-2\cos(x))\cos(x)}{(\sin(x)+\cos(x))^2}$, \newline
+        $f'''(x)=-8$
+    \end{itemize}
+    Подставляя полученные значения производных в ряд Тейлора, получим:
+    \begin{center}
+        $\dfrac{\cos(x)}{\sin(x)+\cos(x)}=1 + \dfrac{-1}{1!}x+\frac{2}{2!}x^2+\dfrac{-8}{3!}x^3+\dots$
+    \end{center}
+    
+    
+    
 \end{document}
-
