@@ -1,0 +1,36 @@
+digraph DG {
+  
+  a -> b -> c -> c4 [color=red][fillcolor=blue];
+  b -> d;
+  b -> t;
+  g -> g1;
+  g -> g3;
+  c -> c1;
+  c -> c2;
+  c -> c3;
+  d -> d1;
+  d -> d2;
+  d -> d3;
+  d -> d4;
+  t -> g2;
+  d2 -> g3;
+  a -> g -> g2 -> c1 [fillcolor="red"] [color=blue];
+  
+  g2 [style=filled] [fillcolor=red];
+  d2 [style=filled] [fillcolor=grey];
+  d1 [style=filled] [fillcolor=forestgreen];
+  d3 [style=filled] [fillcolor=aquamarine];
+  d4 [style=filled] [fillcolor=indigo];
+  g1 [style=filled] [fillcolor=purple];
+  c4 [style=filled] [fillcolor=orange];
+  c2 [style=filled] [fillcolor=coral];
+  c3 [style=filled] [fillcolor=beige];
+  g3 [style=filled] [fillcolor=khaki];
+  c1 [style=filled] [fillcolor=cyan];
+  d [style=filled] [fillcolor=yellow];
+  t [style=filled] [fillcolor=pink];
+  c [style=filled] [fillcolor=green];
+  g [style=filled] [fillcolor=blue];
+  a [style=filled] [fillcolor=gold];
+  b [style=filled] [fillcolor=brown];
+}

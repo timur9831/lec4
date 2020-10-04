@@ -1,0 +1,49 @@
+@startuml
+!pragma teoz true
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+
+actor Student
+actor Teacher
+participant "Lecture" as A
+participant "Home" as B
+
+
+
+Teacher -> B: Spawn
+activate B
+Student -> B: Spawn
+activate B
+
+B -> A: Launch Zoom
+
+B-> A: Enter Zomm
+deactivate B
+B-> A: Enter Zoom
+deactivate B
+activate A
+
+Teacher -> A: Begin Lecture
+Teacher -> A: End Lecture
+deactivate A
+
+A -> Teacher: Go chill
+{start} Student -> B: HARD WORK
+activate B
+B -> Teacher: Ask questions
+
+
+Student -> Teacher: Send HW
+Teacher -> Student: Feedback
+Student -> Teacher: Send good HW
+{end} Teacher -> Student: Accept HW
+B -> Student: Chill
+deactivate B
+{start} <-> {end}: Doing hw
+
+
+Student -> Teacher: Go drink beer!
+Teacher -> Student: Let's go!
+@enduml

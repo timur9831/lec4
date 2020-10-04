@@ -1,0 +1,8 @@
+*.png 
+*.aux 
+*.log 
+*.gz 
+*.toc 
+*.dvi
+*.pdf
+!main.pdf

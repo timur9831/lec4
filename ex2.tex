@@ -1,36 +1,33 @@
-digraph DG {
-  
-  a -> b -> c -> c4 [color=red][fillcolor=blue];
-  b -> d;
-  b -> t;
-  g -> g1;
-  g -> g3;
-  c -> c1;
-  c -> c2;
-  c -> c3;
-  d -> d1;
-  d -> d2;
-  d -> d3;
-  d -> d4;
-  t -> g2;
-  d2 -> g3;
-  a -> g -> g2 -> c1 [fillcolor="red"] [color=blue];
-  
-  g2 [style=filled] [fillcolor=red];
-  d2 [style=filled] [fillcolor=grey];
-  d1 [style=filled] [fillcolor=forestgreen];
-  d3 [style=filled] [fillcolor=aquamarine];
-  d4 [style=filled] [fillcolor=indigo];
-  g1 [style=filled] [fillcolor=purple];
-  c4 [style=filled] [fillcolor=orange];
-  c2 [style=filled] [fillcolor=coral];
-  c3 [style=filled] [fillcolor=beige];
-  g3 [style=filled] [fillcolor=khaki];
-  c1 [style=filled] [fillcolor=cyan];
-  d [style=filled] [fillcolor=yellow];
-  t [style=filled] [fillcolor=pink];
-  c [style=filled] [fillcolor=green];
-  g [style=filled] [fillcolor=blue];
-  a [style=filled] [fillcolor=gold];
-  b [style=filled] [fillcolor=brown];
-}
+\documentclass[a4paper,12pt]{report}
+\usepackage{cmap} % поиск в пдф
+\usepackage[T2A]{fontenc} % кодировка
+\usepackage[utf8]{inputenc} % кодировака исходного текста
+\usepackage[english, russian]{babel} % локализация и переносы
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{./}
+\documentclass[main.tex]{subfiles}
+
+
+\begin{document}
+	
+	\begin{center}
+		\section*{Тест на дальтонизм}
+	\end{center}
+
+	Тест был разработан на основе исследований ученых, работающих в самых лучших научных лабораториях мира. На данный момент, этот тест самый инновационный в плане выявления дальтонизма у больных людей. 
+	
+	Производится следующая градация уровней дальтонизма:
+	\begin{itemize}
+		\item Протанопия - при которой человек не отличает зеленые оттенки от красных;
+		\item Дейтеранопия - больной человек не отличиет зеленый цвет от синего;
+		\item Тританопия - нарушение зрения в сине-фиолетовой части спектра. Человек видит только красные и зеленые оттенки;
+		\item Трихромазия - человек различает три основных цвета. При этом это состояние может быть вполне нормальным и не характеризоваться как дальтонизм.
+		\item Ахроматопсия - характеризуется полным отсутствием цветовых ощущений.
+	\end{itemize}
+
+	\includegraphics[scale=0.45]{ex2.png}
+
+
+	Если вы можете различить все цвета на этой картинке, значит вы здоровы! (но это не точно)
+\end{document}

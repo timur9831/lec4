@@ -1,3 +1,0 @@
-dot -Tpng -o ex2.png < ex2.tex
-https://habr.com/ru/post/416077/
-http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vtBCoKa4YNhbP-G11PCgKxaSKlDIWEe1
